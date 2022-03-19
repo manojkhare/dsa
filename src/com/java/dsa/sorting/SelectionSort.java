@@ -3,7 +3,7 @@ package com.java.dsa.sorting;
 import java.util.Arrays;
 
 class SelectionSort {
-    void doSort(int array[]) {
+    void doSort(int[] array) {
         System.out.println("Array before sorting : " + Arrays.toString(array));
         int pass = array.length;
 
@@ -20,9 +20,9 @@ class SelectionSort {
         System.out.println("Array after sorting : " + Arrays.toString(array));
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         SelectionSort selectionSort = new SelectionSort();
-        int arr[] = {24,78,56,23,19};
+        int[] arr = {24,78,56,23,19};
         selectionSort.doSort(arr);
     }
 }
